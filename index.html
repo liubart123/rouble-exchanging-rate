@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Courency course</title>
+    <script src="js/currencyCourse.js"></script>
+</head>
+
+<body>
+    <table id="courseTable">
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="courseTableBody">
+            
+        </tbody>
+    </table>
+
+    <script>
+        getCurrencyCourse()
+        .then(res=>fillTableOfCourses(document.getElementById('courseTableBody'),res));
+
+    </script>
+</body>
+
+</html>
