@@ -10,18 +10,18 @@
         <thead>
             <tr>
                 <th>Currency</th>
+                <th>Number of units of foreign currency, letter code of the currency</th>
                 <th>Course</th>
             </tr>
         </thead>
         <tbody id="courseTableBody">
-            
+
         </tbody>
     </table>
 
     <script>
         getCurrencyCourse()
-        .then(res=>fillTableOfCourses(document.getElementById('courseTableBody'),res));
-
+            .then(res => fillTableOfCourses(document.getElementById('courseTableBody'), res));
     </script>
 </body>
 
